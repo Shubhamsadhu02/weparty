@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Partials/Header'
 import Cards from './cards'
-import Footer from '../Partials/Footer'
+import Footer from '../Partials/footer'
 
 export default function Home() {
   return (
