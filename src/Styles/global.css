@@ -144,3 +144,22 @@ input:focus
     padding-left: 25px;
     margin-bottom: 16px;
 }
+
+.footer-logo h5,
+.copyright h5
+{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #F5F5F5;
+    opacity: 0.6;
+}
+
+.social-logo i
+{
+    font-size: 25px;
+    color: #F5F5F5;
+    opacity: 0.6;
+    padding: 0 16px;
+}

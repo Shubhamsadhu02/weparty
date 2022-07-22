@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Partials/Header'
 import Cards from './cards'
+import Footer from '../Partials/Footer'
 
 export default function Home() {
   return (
@@ -168,6 +169,8 @@ export default function Home() {
         </div>
       </div>
     </section>
+
+    <Footer/>
     </>
   )
 }
