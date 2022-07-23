@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <Header />
 
-    <section style={{backgroundImage: "url(/images/homebg.png)", backgroundSize: "cover", height: "768px", marginTop: "-78px"}}>
+    <section style={{backgroundImage: "url(/images/homebg.png)", backgroundSize: "cover", height: "768px", marginTop: "-125px"}}>
       <div className="container">
         <div className="row" style={{paddingTop: "9rem"}}>
           <div className="col-lg-6 d-flex flex-column justify-content-center">
@@ -162,7 +162,7 @@ export default function Home() {
             <div className="throw-head">
               <h2>Throw a kickass party hassle-free</h2>
             </div>
-            <div className="throw-btn">
+            <div className="throw-btn mt-5">
               <button type='submit'>Get in Touch</button>
             </div>
           </div>

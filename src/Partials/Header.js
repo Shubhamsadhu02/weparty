@@ -5,11 +5,13 @@ import {Navbar, Offcanvas, Nav, Button, Container, NavDropdown, Form, FormContro
 
 import '../Styles/global.css'
 
-export default function Header() {
+export default function Header(props) {
+  const showNav = props.showNav ?? true;
+
   return (
     <>
     <Navbar key='md' expand='md'>
-      <Container style={{background: "none"}}>
+      <Container style={{background: "none", padding: "25px 0px"}}>
       <Navbar.Brand href="/"><img src="/images/logo.png" height={45} width={134} /></Navbar.Brand>
       <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`}/>
         <Navbar.Offcanvas
@@ -19,13 +21,15 @@ export default function Header() {
         >
           <Offcanvas.Header closeButton>
           </Offcanvas.Header>
+          {showNav ?
           <Offcanvas.Body className='justify-content-end'>
             <Nav>
               <div className="contact-btn">
-                <button type='submit'>Contact us <img src='/images/WhatsApp.png'/></button>
+                <a href='/ContactUs'><button type='submit'>Contact us <img src='/images/WhatsApp.png'/></button></a>
               </div>
             </Nav>
           </Offcanvas.Body>
+          : ""}
         </Navbar.Offcanvas>
       </Container>
     </Navbar>
