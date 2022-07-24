@@ -54,7 +54,7 @@ export default function ContactUs() {
                                 </div>
 
                                 <div className="col-lg-6">
-                                    <input type="date" />
+                                    <input type="date" placeholder='' />
                                 </div>
 
                                 <div className="col-lg-6">
