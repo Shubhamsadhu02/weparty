@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {Link} from 'react-router-dom'
+
 import {Navbar, Offcanvas, Nav, Container} from "react-bootstrap";
 
 import '../Styles/global.css'
@@ -17,7 +19,7 @@ export default function Header(props) {
           <Offcanvas.Body>
             <Nav>
               <div className="contact-btn">
-                <a href='/ContactUs'><button type='submit'>Contact us <img src='/images/WhatsApp.png' alt=''/></button></a>
+                <Link to={'/ContactUs'}><button type='submit'>Contact us <img src='/images/WhatsApp.png' alt=''/></button></Link>
               </div>
             </Nav>
           </Offcanvas.Body>
