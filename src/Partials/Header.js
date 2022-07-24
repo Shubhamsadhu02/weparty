@@ -15,7 +15,7 @@ export default function Header(props) {
       <Navbar.Brand href="/"><img src="/images/logo.png" height={45} width={134} /></Navbar.Brand>
         
           {showNav ?
-          <Offcanvas.Body className='justify-content-end'>
+          <Offcanvas.Body>
             <Nav>
               <div className="contact-btn">
                 <a href='/ContactUs'><button type='submit'>Contact us <img src='/images/WhatsApp.png'/></button></a>
