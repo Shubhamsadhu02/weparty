@@ -15,7 +15,7 @@ export default function cards() {
         </div>
 
         <div className="row">
-          <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="cards-box">
               <div className="cards-img">
                   <img src='/images/birthdaybox.png' alt="" />
@@ -26,7 +26,7 @@ export default function cards() {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="cards-box">
               <div className="cards-img">
                   <img src='/images/weeding.png' alt="" />
@@ -37,7 +37,7 @@ export default function cards() {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="cards-box">
               <div className="cards-img">
                   <img src='/images/corporate.png' alt="" />
@@ -48,7 +48,7 @@ export default function cards() {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="cards-box">
               <div className="cards-img">
                   <img src='/images/college.png' alt="" />
@@ -59,7 +59,7 @@ export default function cards() {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="cards-box">
               <div className="cards-img">
                   <img src='/images/gamming.png' alt="" />
@@ -70,7 +70,7 @@ export default function cards() {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-4 col-sm-12">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="cards-box">
               <div className="cards-img">
                   <img src='/images/movie.png' alt="" />

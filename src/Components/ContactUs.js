@@ -4,11 +4,16 @@ import Header from '../Partials/Header'
 export default function ContactUs() {
   return (
     <>
+    <div className="contactbg">
+        <img src='/images/contactusbg.png'/>
+    </div>
     <Header showNav={false} />
-    <section style={{backgroundImage: "url(/images/contactusbg.png)", backgroundSize: "cover", height: "768px", marginTop: "-125px"}}>
-        <div className="container" style={{height: "750px", paddingTop: "80px"}}>
+    {/* style={{backgroundImage: "url(/images/contactusbg.png)", backgroundSize: "cover", height: "768px", marginTop: "-125px"}} */}
+    <section>
+        <div className="container">
+            <div className="contact position-relative" style={{height: "750px"}}>
             <div className="row">
-                <div className="col-lg-6 d-flex flex-column justify-content-center">
+                <div className="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
                     <div className="home">
                         <div className="party-icon">
                             <img src='/images/partyicon.png' height={100} width={100}/>
@@ -18,7 +23,7 @@ export default function ContactUs() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-6">
+                <div className="col-sm-12 col-lg-6">
                     <form>
                     <div className="contactus">
                             <div className="row">
@@ -75,6 +80,7 @@ export default function ContactUs() {
                         </div>
                     </form>
                 </div>
+            </div>
             </div>
         </div>
     </section>

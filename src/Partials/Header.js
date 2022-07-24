@@ -13,14 +13,7 @@ export default function Header(props) {
     <Navbar key='md' expand='md'>
       <Container style={{background: "none", padding: "25px 0px"}}>
       <Navbar.Brand href="/"><img src="/images/logo.png" height={45} width={134} /></Navbar.Brand>
-      <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`}/>
-        <Navbar.Offcanvas
-          id={`offcanvasNavbar-expand-md`}
-          aria-labelledby={`offcanvasNavbarLabel-expand-md`}
-          placement="end"
-        >
-          <Offcanvas.Header closeButton>
-          </Offcanvas.Header>
+        
           {showNav ?
           <Offcanvas.Body className='justify-content-end'>
             <Nav>
@@ -30,7 +23,6 @@ export default function Header(props) {
             </Nav>
           </Offcanvas.Body>
           : ""}
-        </Navbar.Offcanvas>
       </Container>
     </Navbar>
     </>
