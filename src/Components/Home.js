@@ -50,7 +50,7 @@ export default function Home() {
                     <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
-                    <p>4 Sony PS4s with multipl controllers </p>
+                    <p>4 Sony PS4s with multiple controllers </p>
                   </div>
                 </li>
                 <li>
