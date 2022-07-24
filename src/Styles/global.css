@@ -238,18 +238,18 @@ textarea
         text-align: center;
     }
 
-    .contact-btn
-    {
-        display: flex;
-        justify-content: end;
-    }
-
     .waitlist-btn button,
     .join-btn button,
     .throw-btn button
     {
         padding: 12px 24px;
         font-size: 14px;
+    }
+
+    .offcanvas-body
+    {
+        display: flex;
+        justify-content: flex-end;
     }
 
     .waitlist-btn,

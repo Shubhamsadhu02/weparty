@@ -11,8 +11,8 @@ export default function Footer() {
                 <div className="footer-logo">
                   <h5>Coming soon...</h5>
                   <div className="footer-logo--premium d-flex flex-row align-items-center">
-                    <img src='/images/logo.png' height={33} width={98} style={{marginRight: "15px"}} />
-                    <img src='/images/premium.png' height={24} />
+                    <img src='/images/logo.png' alt='' height={33} width={98} style={{marginRight: "15px"}} />
+                    <img src='/images/premium.png' alt='' height={24} />
                   </div>
                 </div>
               </div>

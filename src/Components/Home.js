@@ -26,7 +26,7 @@ export default function Home() {
           </div>
           <div className="col-sm-12 col-lg-6">
             <div className="home-img">
-              <img src='/images/homecar.png'/>
+              <img src='/images/homecar.png' alt=''/>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
               <ul>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>4 Sony PS4s with multiple controllers </p>
@@ -55,7 +55,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Rich library of latest games for all ages </p>
@@ -63,7 +63,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>4 Sony PS4s with multiple controllers </p>
@@ -71,7 +71,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>2 Occulus Quest 2 VR headsets </p>
@@ -79,7 +79,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Climate controlled cabin with surround sound and glow lights</p>
@@ -87,7 +87,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Board Games, Karaoke and DJ set </p>
@@ -95,7 +95,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Truck mounted movie screen</p>
@@ -103,7 +103,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Can accomodate up to 16 players</p>
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <div className="col-sm-12 col-lg-6">
             <div className="hood-img">
-              <img src='/images/underhood.png' width={710} height={580}/>
+              <img src='/images/underhood.png' alt='' width={710} height={580}/>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default function Home() {
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
               <div className="join-img">
-                <img src='/images/birthdayicon.png' height={76} width={76}></img>
+                <img src='/images/birthdayicon.png' alt='' height={76} width={76}></img>
               </div>
               <div className="join-head">
                 <h2>Join the Waitlist to <br/> get Early Bird <br/>Discounts!</h2>
@@ -156,7 +156,7 @@ export default function Home() {
         <div className="row">
           <div className=" col-sm-12 col-lg-7">
             <div className="throw-img">
-              <img src='/images/girls.png'/>
+              <img src='/images/girls.png' alt=''/>
             </div>
           </div>
           <div className="col-sm-12 col-lg-5 d-flex flex-column justify-content-center">

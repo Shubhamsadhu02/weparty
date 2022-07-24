@@ -5,7 +5,7 @@ export default function ContactUs() {
   return (
     <>
     <div className="contactbg">
-        <img src='/images/contactusbg.png'/>
+        <img src='/images/contactusbg.png' alt=''/>
     </div>
     <Header showNav={false} />
     {/* style={{backgroundImage: "url(/images/contactusbg.png)", backgroundSize: "cover", height: "768px", marginTop: "-125px"}} */}
@@ -16,7 +16,7 @@ export default function ContactUs() {
                 <div className="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
                     <div className="home">
                         <div className="party-icon">
-                            <img src='/images/partyicon.png' height={100} width={100}/>
+                            <img src='/images/partyicon.png' alt='' height={100} width={100}/>
                         </div>
                         <div className="home-head">
                             <h1>Request <br/>a<span style={{color: "#EB4775"}}> Party</span></h1>
