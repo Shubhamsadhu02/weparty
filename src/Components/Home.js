@@ -1,17 +1,19 @@
 import React from 'react'
 import Header from '../Partials/Header'
 import Cards from './cards'
+import Footer from '../Partials/footer'
+import {Row, Col, Container} from 'reactstrap'
 
 export default function Home() {
   return (
     <>
     <Header />
 
-    <section style={{backgroundImage: "url(/images/homebg.png)", backgroundSize: "cover", height: "768px", marginTop: "-78px"}}>
-      <div className="container">
-        <div className="d-flex flex-wrap" style={{paddingTop: "9rem"}}>
-          <div className="col-lg-6 d-flex flex-column justify-content-center">
-            <div className="home">
+    <section>
+      <Container>
+        <Row noGutters={true}>
+          <Col md={6} sm={12}>
+          <div className="home">
               <div className="home-head mb-4">
                 <h1>We <span style={{color: "#EB4775"}}>Celebrate</span></h1>
               </div>
@@ -22,14 +24,14 @@ export default function Home() {
                 <button type="submit">Join the Waitlist</button>
               </div>
             </div>
-          </div>
-          <div className="col-lg-6">
+          </Col>
+          <Col md={6} sm={12}>
             <div className="home-img">
-              <img src='/images/homecar.png'/>
+              <img src='/images/homecar.png' alt=''/>
             </div>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </section>
     
     
@@ -38,7 +40,7 @@ export default function Home() {
     <section>
       <div className="container mt-15">
         <div className="row">
-          <div className="col-lg-6 d-flex flex-column justify-content-center">
+          <div className="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
             <div className="hood-head mb-5">
               <h2>Under the Hood</h2>
             </div>
@@ -46,7 +48,7 @@ export default function Home() {
               <ul>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>4 Sony PS4s with multiple controllers </p>
@@ -54,7 +56,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Rich library of latest games for all ages </p>
@@ -62,7 +64,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>4 Sony PS4s with multiple controllers </p>
@@ -70,7 +72,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>2 Occulus Quest 2 VR headsets </p>
@@ -78,7 +80,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Climate controlled cabin with surround sound and glow lights</p>
@@ -86,7 +88,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Board Games, Karaoke and DJ set </p>
@@ -94,7 +96,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Truck mounted movie screen</p>
@@ -102,7 +104,7 @@ export default function Home() {
                 </li>
                 <li>
                   <div className="hood-tick">
-                    <img src='/images/tick.png'/>
+                    <img src='/images/tick.png' alt=''/>
                   </div>
                   <div className="hood-paragrapgh">
                     <p>Can accomodate up to 16 players</p>
@@ -111,9 +113,9 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-sm-12 col-lg-6">
             <div className="hood-img">
-              <img src='/images/underhood.png' width={710} height={580}/>
+              <img src='/images/underhood.png' alt='' width={710} height={580}/>
             </div>
           </div>
         </div>
@@ -122,52 +124,55 @@ export default function Home() {
 
     <section className='p-5'>
       <div className="container mt-15 mb-15" style={{backgroundImage: "url(/images/loginbg.png)", backgroundSize: "cover", height: "510px"}}>
-        <div className="row">
-          <div className="col-lg-6 d-flex flex-column justify-content-center" style={{padding: "5rem"}}>
-            <div className="join-img">
-              <img src='/images/birthdayicon.png' height={76} width={76}></img>
-            </div>
-            <div className="join-head">
-              <h2>Join the Waitlist to <br/> get Early Bird <br/>Discounts!</h2>
-            </div>
-          </div>
-
-          <div className="col-lg-6 d-flex flex-column justify-content-center" style={{padding: "5rem"}}>
-            <form>
-              <div className="join-form d-flex flex-column justify-content-end">
-                <input type="text" placeholder='Full Name'/>
-                <input type="email" placeholder='Email'/>
-                <input type="tel" placeholder='Mobile Number'/>
+        <div className="join" style={{padding: "5rem"}}>
+          <div className="row">
+            <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
+              <div className="join-img">
+                <img src='/images/birthdayicon.png' alt='' height={76} width={76}></img>
               </div>
-              <div className="join-btn d-flex justify-content-end mt-3">
-                  <button type='submit'>Join Now</button>
+              <div className="join-head">
+                <h2>Join the Waitlist to <br/> get Early Bird <br/>Discounts!</h2>
+              </div>
+            </div>
+
+            <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
+              <form>
+                <div className="join-form d-flex flex-column justify-content-end">
+                  <input type="text" placeholder='Full Name'/>
+                  <input type="email" placeholder='Email'/>
+                  <input type="tel" placeholder='Mobile Number'/>
                 </div>
-              
-            </form>
+                <div className="join-btn d-flex justify-content-end mt-3">
+                  <button type='submit'>Join Now</button>
+                </div> 
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <div className="container mt-15">
+      <div className="container mt-15 mb-15">
         <div className="row">
-          <div className="col-lg-7">
+          <div className=" col-sm-12 col-lg-7">
             <div className="throw-img">
-              <img src='/images/girls.png'/>
+              <img src='/images/girls.png' alt=''/>
             </div>
           </div>
-          <div className="col-lg-5 d-flex flex-column justify-content-center">
+          <div className="col-sm-12 col-lg-5 d-flex flex-column justify-content-center">
             <div className="throw-head">
               <h2>Throw a kickass party hassle-free</h2>
             </div>
-            <div className="throw-btn">
+            <div className="throw-btn mt-5">
               <button type='submit'>Get in Touch</button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <Footer/>
     </>
   )
 }
