@@ -1,74 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     max-width: 100%;
 }
 
-body, html{
+body, html {
     overflow-x: hidden;
     font-family: 'Outfit', sans-serif;
     background: #0C0B1E;
 }
+.row{
+    margin-left: 0px;
+}
 
-.mt-15
-{
+.mt-15 {
     margin-top: 6rem;
 }
 
-.mb-15
-{
+.mb-15 {
     margin-bottom: 6rem;
 }
 
 input:focus,
-textarea:focus
-{
+textarea:focus {
     outline: none;
 }
 
-textarea
-{
+textarea {
     resize: none;
 }
 
-.contact-btn button,
+.contact-btn a,
 .waitlist-btn button,
 .join-btn button,
-.throw-btn button
-{
+.throw-btn button {
     padding: 16px 32px;
     border: 1px solid rgba(245, 245, 245, 0.4);
     border-radius: 4px;
     background: none;
-
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
 }
-
-.contact-btn button img
-{
+.contact-btn a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    
+}
+.contact-btn img {
     width: 24px;
     height: 24px;
+    margin-left: 5px;
 }
 
-.home-head h1
-{
+.home {
+    margin-top: 70px;
+    position: relative;
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    width: 925px;
+    height: 925px;
+    left: -496px;
+    top: -20px;
+
+    background: #008DEB;
+    opacity: 0.3;
+    filter: blur(434px);
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    width: 328px;
+    height: 328px;
+    left: 422px;
+    top: -245px;
+
+    /* Tertiary / Shade 1 */
+
+    background: #ED9512;
+    opacity: 0.72;
+    filter: blur(434px);
+}
+
+.home-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+}
+
+.home-head h1 {
     font-weight: 700;
     font-size: 72px;
     line-height: 92px;
     color: #F5F5F5;
+    display: flex;
 }
 
 .head-paragrapgh p,
 .cards-paragrapgh p,
-.hood-paragrapgh p
-{
+.hood-paragrapgh p {
     font-weight: 200;
     font-size: 24px;
     line-height: 110%;
@@ -79,32 +119,130 @@ textarea
 
 .waitlist-btn button,
 .join-btn button,
-.throw-btn button
-{
+.throw-btn button {
     background: #E61A53;
     padding: 16px 40px;
     border: none;
 }
 
+.animatedText{
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+.animatedText span{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.animatedText span:first-child{
+    animation: fadeFirst 3s ease-in 1s infinite;
+}
+.animatedText span:nth-child(2){
+    animation: fadeSecond 3s ease-in 10s infinite;
+}
+.animatedText span:last-child{
+    animation: fadeLast 3s ease-in 15s infinite;
+}
+
+@keyframes fadeFirst {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    20% {
+        opacity: 0.6;
+        transform: translateY(-20px);
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+    50% {
+        opacity: 0.4;
+        transform: translateY(-260px);
+    }
+    70% {
+        opacity: 0.3;
+        transform: translateY(-380px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-1000px);
+    }
+  }
+  @keyframes fadeSecond {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    20% {
+        opacity: 0.1;
+        transform: translateY(0px);
+    }
+    30%{
+        opacity: 0.8;
+        transform: translateY(-0px);
+    }
+    50% {
+        opacity: 0.4;
+        transform: translateY(-60px);
+    }
+    70% {
+        opacity: 0.3;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+  }
+  @keyframes fadeLast {
+    0% {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    20% {
+        opacity: 0.6;
+        transform: translateY(-120px);
+    }
+    30%{
+        opacity: 1;
+        transform: translateY(-240px);
+    }
+    50% {
+        opacity: 0.4;
+        transform: translateY(-360px);
+    }
+    70% {
+        opacity: 0.3;
+        transform: translateY(-480px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+  }
+
 .cards-heading h2,
 .hood-head h2,
 .join-head h2,
-.throw-head h2
-{
+.throw-head h2 {
     font-weight: 600;
     font-size: 44px;
     line-height: 120%;
     color: #F5F5F5;
 }
 
-.cards-box
-{
+.cards-box {
     width: 362px;
     height: 420px;
 }
 
-.cards-topic
-{
+.cards-topic {
     font-weight: 450;
     font-size: 18px;
     line-height: 120%;
@@ -115,20 +253,17 @@ textarea
     margin-top: -50px;
 }
 
-.hood-list ul
-{
+.hood-list ul {
     padding-left: 0;
 }
 
-.hood-list ul li
-{
+.hood-list ul li {
     list-style: none;
     display: flex;
     margin-bottom: 20px;
 }
 
-.hood-tick img
-{
+.hood-tick img {
     width: 32px;
     height: 32px;
     margin-right: 25px;
@@ -137,8 +272,7 @@ textarea
 .join-form input,
 .contactus input,
 .contactus textarea,
-.contactus select
-{
+.contactus select {
     width: 100%;
     height: 57px;
     border: 1px solid rgba(245, 245, 245, 0.12);
@@ -155,8 +289,7 @@ textarea
 }
 
 .footer-logo h5,
-.copyright h5
-{
+.copyright h5 {
     font-weight: 300;
     font-size: 12px;
     line-height: 120%;
@@ -165,28 +298,24 @@ textarea
     opacity: 0.6;
 }
 
-.social-logo i
-{
+.social-logo i {
     font-size: 25px;
     color: #F5F5F5;
     opacity: 0.6;
     padding: 0 16px;
 }
 
-.contactbg
-{
+.contactbg {
     display: block;
     position: fixed;
 }
 
-.contactus textarea
-{
+.contactus textarea {
     height: 126px;
     padding: 15px;
 }
 
-.contactus .send-btn button
-{
+.contactus .send-btn button {
     width: 100%;
     height: 54px;
     background: #E61A53;
@@ -199,55 +328,50 @@ textarea
 }
 
 @media (max-width: 500px) {
-    .navbar .container
-    {
+    .navbar .container {
         padding: 0 0 !important;
     }
 
-    .navbar-brand img
-    {
+    .navbar-brand img {
         width: 70px;
         height: 24px;
         margin-left: 1rem;
     }
 
-    .contact-btn button
-    {
-        width: 108px;
-        height: 34px;
+    .contact-btn{
+        margin-right: 20px;
+    } 
+
+    .contact-btn a {
         font-size: 10px;
         padding: 5px 15px;
+        display: block;
     }
 
-    .contact-btn button img
-    {
+    .contact-btn img {
         width: 14px;
         height: 14px;
     }
 
-    .home-head h1
-    {
+    .home-head h1 {
         font-size: 42px;
         text-align: center;
         line-height: 120%;
     }
-    
-    .head-paragrapgh p
-    {
+
+    .head-paragrapgh p {
         font-size: 14px;
         text-align: center;
     }
 
     .waitlist-btn button,
     .join-btn button,
-    .throw-btn button
-    {
+    .throw-btn button {
         padding: 12px 24px;
         font-size: 14px;
     }
 
-    .offcanvas-body
-    {
+    .offcanvas-body {
         display: flex;
         justify-content: flex-end;
     }
@@ -255,28 +379,23 @@ textarea
     .waitlist-btn,
     .throw-head,
     .throw-btn,
-    .footer-logo h5
-    {
+    .footer-logo h5 {
         text-align: center;
     }
 
-    .home-img
-    {
+    .home-img {
         margin-top: 50px;
     }
 
-    .cards-heading h2, .hood-head h2, .throw-head h2
-    {
+    .cards-heading h2, .hood-head h2, .throw-head h2 {
         font-size: 28px;
     }
 
-    .head-paragrapgh p, .cards-paragrapgh p, .hood-paragrapgh p
-    {
+    .head-paragrapgh p, .cards-paragrapgh p, .hood-paragrapgh p {
         font-size: 14px;
     }
 
-    .hood-tick img
-    {
+    .hood-tick img {
         width: 17px;
         height: 17px;
         margin-right: 15px;
@@ -285,85 +404,71 @@ textarea
         align-items: center;
     }
 
-    .hood-img img
-    {
+    .hood-img img {
         height: 317px;
         margin-top: 50px;
     }
 
-    .join
-    {
+    .join {
         padding: 25px 15px !important;
         padding-right: 0 !important;
     }
 
-    .join-head h2
-    {
+    .join-head h2 {
         font-size: 20px;
     }
 
-    .join-img img
-    {
+    .join-img img {
         width: 43px;
         height: 43px;
     }
 
-    .join-form input, .contactus input, .contactus select
-    {
+    .join-form input, .contactus input, .contactus select {
         height: 50px;
         font-size: 12px;
     }
 
-    .join-btn
-    {
+    .join-btn {
         justify-content: initial !important;
     }
 
-    .throw-btn
-    {
+    .throw-btn {
         margin-top: 1rem !important;
     }
 
-    .footer-logo--premium
-    {
+    .footer-logo--premium {
         justify-content: center;
     }
 
-    .footer .col-sm-12:nth-child(3){
+    .footer .col-sm-12:nth-child(3) {
         align-items: center !important;
     }
 
-    .footer
-    {
+    .footer {
         padding: 0 !important;
         padding-top: 30px !important;
     }
 
-    .footer .col-sm-12
-    {
+    .footer .col-sm-12 {
         margin-top: 25px;
     }
 
-    .contactus .send-btn button
-    {
+    .contactus .send-btn button {
         height: 38px;
     }
 
-    .contactus textarea
-    {
+    .contactus textarea {
         height: 100px;
         font-size: 12px;
     }
 
-    .party-icon
-    {
+    .party-icon {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .contactbg
-    {
+    .contactbg {
         display: none;
     }
 }
