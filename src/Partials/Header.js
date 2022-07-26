@@ -1,31 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { Navbar, NavbarBrand, NavbarText, Container, Row, Col } from 'reactstrap';
 
-import {Link} from 'react-router-dom'
-
-import {Navbar, Offcanvas, Nav, Container} from "react-bootstrap";
-
-import '../Styles/global.css'
 
 export default function Header(props) {
   const showNav = props.showNav ?? true;
 
   return (
     <>
-    <Navbar key='md' expand='md'>
-      <Container style={{background: "none", padding: "25px 0px"}}>
-      <Navbar.Brand href="/"><img src="/images/logo.png" alt='' height={45} width={134} /></Navbar.Brand>
-        
-          {showNav ?
-          <Offcanvas.Body>
-            <Nav>
-              <div className="contact-btn">
-                <Link to={'/ContactUs'}><button type='submit'>Contact us <img src='/images/WhatsApp.png' alt=''/></button></Link>
-              </div>
-            </Nav>
-          </Offcanvas.Body>
-          : ""}
-      </Container>
-    </Navbar>
+      <nav className="navbar">
+        <div className="container">
+          <a className="navbar-brand"><img src="/images/logo.svg" alt height="45" width="134}" /></a>
+          <div className="contact-btn">
+          <Link to={'/ContactUs'}>Contact us <img src='/images/WhatsApp.png' alt='' /></Link>
+        </div>
+        </div>
+      </nav>
     </>
   )
 }
