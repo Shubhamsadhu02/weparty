@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+body, html{
+    overflow-x: hidden;
+    font-family: 'Outfit', sans-serif;
+    background: #0C0B1E;
+}
+
+.mt-15
+{
+    margin-top: 6rem;
+}
+
+.mb-15
+{
+    margin-bottom: 6rem;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+.contact-btn button,
+.waitlist-btn button,
+.join-btn button,
+.throw-btn button
+{
+    padding: 16px 32px;
+    border: 1px solid rgba(245, 245, 245, 0.4);
+    border-radius: 4px;
+    background: none;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.contact-btn button img
+{
+    width: 24px;
+    height: 24px;
+}
+
+.home-head h1
+{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 92px;
+    color: #F5F5F5;
+}
+
+.head-paragrapgh p,
+.cards-paragrapgh p,
+.hood-paragrapgh p
+{
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: 0.02em;
+    color: #F5F5F5;
+    opacity: 0.6;
+}
+
+.waitlist-btn button,
+.join-btn button,
+.throw-btn button
+{
+    background: #E61A53;
+    padding: 16px 40px;
+    border: none;
+}
+
+.cards-heading h2,
+.hood-head h2,
+.join-head h2,
+.throw-head h2
+{
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 120%;
+    color: #F5F5F5;
+}
+
+.cards-box
+{
+    width: 362px;
+    height: 420px;
+}
+
+.cards-topic
+{
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #F5F5F5;
+
+    position: relative;
+    margin-top: -50px;
+}
+
+.hood-list ul
+{
+    padding-left: 0;
+}
+
+.hood-list ul li
+{
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.hood-tick img
+{
+    width: 32px;
+    height: 32px;
+    margin-right: 25px;
+}
+
+.join-form input
+{
+    width: 100%;
+    height: 57px;
+    border: 1px solid rgba(245, 245, 245, 0.12);
+    border-radius: 4px;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #F5F5F5;
+    opacity: 0.4;
+    background: none;
+    padding-left: 25px;
+    margin-bottom: 16px;
+}
