@@ -75,7 +75,7 @@ export default function Home() {
       <Cards />
 
       <section>
-        <div className="container mt-15">
+        <div className="container">
           <div className="row">
             <div className="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
               <div className="hood-head mb-5">
@@ -150,9 +150,9 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="col-sm-12 col-lg-6">
+            <div className="col-sm-12 col-lg-5 offset-md-1">
               <div className="hood-img position-relative">
-                <img src='/images/underhood.png' alt='' width={710} height={580} />
+                <img src='/images/underhood.png' className='img-responsive h-100' alt='' />
               </div>
             </div>
           </div>
@@ -160,11 +160,10 @@ export default function Home() {
       </section>
 
       {/* style={{ backgroundImage: "url(/images/loginbg.png)", backgroundSize: "cover", height: "510px" }} */}
-      <section className='p-5'>
-        <div className="container mt-15 mb-15">
-          <div className="join" style={{ padding: "5rem" }}>
+      <section className='join'>
+        <div className="container">
             <div className="row">
-              <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
+              <div className="col-sm-12 col-md-6 col-lg-6">
                 <div className="join-img">
                   <img src='/images/birthdayicon.png' alt='' height={76} width={76}></img>
                 </div>
@@ -186,7 +185,7 @@ export default function Home() {
                 </form>
               </div>
             </div>
-          </div>
+            <img src="/images/join-confeti.svg" alt="" className='join-confeti' />
         </div>
       </section>
 

@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <>
-    <section style={{ background: "#121028", height: "auto"}}>
+    <footer style={{ background: "#121028", height: "auto"}}>
         <div className="container">
           <div className="footer" style={{ padding: "50px 20px" }}>
             <div className="row">
@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-    </section>
+    </footer>
     </>
   )
 }
