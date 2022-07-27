@@ -115,6 +115,11 @@ textarea {
     opacity: 0.6;
 }
 
+.hood-paragrapgh p
+{
+    margin-bottom: 0;
+}
+
 .waitlist-btn button,
 .join-btn button,
 .throw-btn button {
@@ -256,9 +261,8 @@ textarea {
     margin-bottom: 20px;
 }
 
-.hood-tick img {
+.hood-tick {
     width: 32px;
-    height: 32px;
     margin-right: 25px;
 }
 
@@ -482,9 +486,8 @@ textarea {
         font-size: 14px;
     }
 
-    .hood-tick img {
+    .hood-tick {
         width: 17px;
-        height: 17px;
         margin-right: 15px;
         display: flex;
         justify-content: center;
