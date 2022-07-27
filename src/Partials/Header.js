@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Navbar, NavbarBrand, NavbarText, Container, Row, Col } from 'reactstrap';
 
 
 export default function Header(props) {
@@ -10,10 +9,12 @@ export default function Header(props) {
     <>
       <nav className="navbar">
         <div className="container">
-          <a className="navbar-brand"><img src="/images/logo.svg" alt height="45" width="134}" /></a>
+          <a href="/" className="navbar-brand"><img src="/images/logo.svg" alt='' height="45" width="134}" /></a>
+          {showNav ?
           <div className="contact-btn">
-          <Link to={'/ContactUs'}>Contact us <img src='/images/WhatsApp.png' alt='' /></Link>
-        </div>
+            <Link to={'/ContactUs'}>Contact us <img src='/images/WhatsApp.png' alt='' /></Link>
+          </div>
+          :""}
         </div>
       </nav>
     </>

@@ -84,8 +84,6 @@ textarea {
     left: 422px;
     top: -245px;
 
-    /* Tertiary / Shade 1 */
-
     background: #ED9512;
     opacity: 0.72;
     filter: blur(434px);
@@ -98,12 +96,12 @@ textarea {
     height: 70%;
 }
 
-.home-head h1 {
+.home-head h1,
+.home-head1 h1 {
     font-weight: 700;
     font-size: 72px;
     line-height: 92px;
     color: #F5F5F5;
-    display: flex;
 }
 
 .head-paragrapgh p,
@@ -277,16 +275,16 @@ textarea {
     height: 57px;
     border: 1px solid rgba(245, 245, 245, 0.12);
     border-radius: 4px;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 14px;
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #F5F5F5;
-    opacity: 0.4;
     background: none;
     padding: 15px;
     margin-bottom: 16px;
 }
+
 
 .footer-logo h5,
 .copyright h5 {
@@ -353,7 +351,8 @@ textarea {
         height: 14px;
     }
 
-    .home-head h1 {
+    .home-head h1,
+    .home-head1 h1 {
         font-size: 42px;
         text-align: center;
         line-height: 120%;
@@ -364,16 +363,38 @@ textarea {
         text-align: center;
     }
 
+    
+    .home::after {
+        content: '';
+        position: absolute;
+        width: 248px;
+        height: 248px;
+        left: -169px;
+        top: 101px;
+
+        background: #008DEB;
+        opacity: 0.3;
+        filter: blur(250px);
+    }
+
+    .home::before {
+        content: '';
+        position: absolute;
+        width: 172px;
+        height: 172px;
+        left: 94px;
+        top: -140px;
+
+        background: #ED9512;
+        opacity: 0.72;
+        filter: blur(250px);
+    }
+
     .waitlist-btn button,
     .join-btn button,
     .throw-btn button {
         padding: 12px 24px;
         font-size: 14px;
-    }
-
-    .offcanvas-body {
-        display: flex;
-        justify-content: flex-end;
     }
 
     .waitlist-btn,
@@ -470,5 +491,10 @@ textarea {
 
     .contactbg {
         display: none;
+    }
+
+    .contactus
+    {
+        margin-bottom: 20px;
     }
 }

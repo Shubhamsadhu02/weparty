@@ -1,4 +1,4 @@
-import {React, useEffect} from 'react'
+import {React} from 'react'
 import Header from '../Partials/Header'
 import Cards from './cards'
 import Footer from '../Partials/footer'
@@ -181,7 +181,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="container mt-15 mb-15">
+        <div className="container mb-15">
           <div className="row">
             <div className=" col-sm-12 col-lg-7">
               <div className="throw-img">
