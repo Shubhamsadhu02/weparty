@@ -1,29 +1,12 @@
-import {React} from 'react'
+import { React } from 'react'
 import Header from '../Partials/Header'
 import Cards from './cards'
 import Footer from '../Partials/footer'
 import { Row, Col, Container } from 'reactstrap'
-
-// import TextLoop from "react-text-loop";
-
-
+import { motion, useScroll } from 'framer-motion'
 export default function Home() {
-
-  // function animate(){
-  //   const ele = document.querySelectorAll('.animatedText span');
-  //   let i=0;
-  //   setInterval(function(){
-  //     ele[i].classList.add('active');
-  //     i++;
-  //     if(i>(ele.length -1)){
-  //       i=0;
-  //     }
-  //   }, 3000);
-  // }
-  // useEffect(() => {
-  //   animate();
-  // }, []);
-  
+  const { scrollYProgress } = useScroll();
+  console.log(scrollYProgress);
   return (
     <>
       <Header />
@@ -35,17 +18,17 @@ export default function Home() {
               <div className="home-col">
                 <div className="home-head mb-4">
                   <h1>We
-                    {/* <div className='animatedText'>
-                      <span style={{ color: "#EB4775" }}>
+                    <div className='animatedText'>
+                      <span>
                         <b>Play</b>
                       </span>
-                      <span style={{ color: "#EB4775" }}>
+                      <span >
                         <b>Celebrate</b>
                       </span>
-                      <span style={{ color: "#EB4775" }}>
+                      <span>
                         <b>Party</b>
                       </span>
-                    </div> */}
+                    </div>
 
                     {/* <TextLoop>
                       <span>First item</span>
@@ -162,30 +145,30 @@ export default function Home() {
       {/* style={{ backgroundImage: "url(/images/loginbg.png)", backgroundSize: "cover", height: "510px" }} */}
       <section className='join'>
         <div className="container">
-            <div className="row">
-              <div className="col-sm-12 col-md-6 col-lg-6">
-                <div className="join-img">
-                  <img src='/images/birthdayicon.png' alt='' height={76} width={76}></img>
-                </div>
-                <div className="join-head">
-                  <h2>Join the Waitlist to <br /> get Early Bird <br />Discounts!</h2>
-                </div>
+          <div className="row">
+            <div className="col-sm-12 col-md-6 col-lg-6">
+              <div className="join-img">
+                <img src='/images/birthdayicon.png' alt='' height={76} width={76}></img>
               </div>
-
-              <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
-                <form>
-                  <div className="join-form d-flex flex-column justify-content-end">
-                    <input type="text" placeholder='Full Name' />
-                    <input type="email" placeholder='Email' />
-                    <input type="tel" placeholder='Mobile Number' />
-                  </div>
-                  <div className="join-btn d-flex justify-content-end mt-3">
-                    <button type='submit'>Join Now</button>
-                  </div>
-                </form>
+              <div className="join-head">
+                <h2>Join the Waitlist to <br /> get Early Bird <br />Discounts!</h2>
               </div>
             </div>
-            <img src="/images/join-confeti.svg" alt="" className='join-confeti' />
+
+            <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
+              <form>
+                <div className="join-form d-flex flex-column justify-content-end">
+                  <input type="text" placeholder='Full Name' />
+                  <input type="email" placeholder='Email' />
+                  <input type="tel" placeholder='Mobile Number' />
+                </div>
+                <div className="join-btn d-flex justify-content-end mt-3">
+                  <button type='submit'>Join Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <img src="/images/join-confeti.svg" alt="" className='join-confeti' />
         </div>
       </section>
 

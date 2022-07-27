@@ -18,9 +18,9 @@ export default function Footer() {
               </div>
               <div className=" col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-center">
                 <div className="social-logo">
-                  <i class="fab fa-instagram"></i>
-                  <i class="fab fa-facebook"></i>
-                  <i class="fab fa-linkedin"></i>
+                  <i className="fab fa-instagram"></i>
+                  <i className="fab fa-facebook"></i>
+                  <i className="fab fa-linkedin"></i>
                 </div>
               </div>
               <div className="col-sm-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-end">
