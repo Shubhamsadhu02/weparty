@@ -115,6 +115,11 @@ textarea {
     opacity: 0.6;
 }
 
+.hood-paragrapgh p
+{
+    margin-bottom: 0;
+}
+
 .waitlist-btn button,
 .join-btn button,
 .throw-btn button {
