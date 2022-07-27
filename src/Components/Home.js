@@ -4,6 +4,9 @@ import Cards from './cards'
 import Footer from '../Partials/footer'
 import { Row, Col, Container } from 'reactstrap'
 
+// import TextLoop from "react-text-loop";
+
+
 export default function Home() {
 
   // function animate(){
@@ -32,17 +35,23 @@ export default function Home() {
               <div className="home-col">
                 <div className="home-head mb-4">
                   <h1>We
-                    <div className='animatedText'>
-                    <span style={{ color: "#EB4775" }}>
-                      <b>Play</b>
-                    </span>
-                    <span style={{ color: "#EB4775" }}>
-                      <b>Celebrate</b>
-                    </span>
-                    <span style={{ color: "#EB4775" }}>
-                      <b>Party</b>
-                    </span>
-                    </div>
+                    {/* <div className='animatedText'>
+                      <span style={{ color: "#EB4775" }}>
+                        <b>Play</b>
+                      </span>
+                      <span style={{ color: "#EB4775" }}>
+                        <b>Celebrate</b>
+                      </span>
+                      <span style={{ color: "#EB4775" }}>
+                        <b>Party</b>
+                      </span>
+                    </div> */}
+
+                    {/* <TextLoop>
+                      <span>First item</span>
+                      <span>second item</span>
+                    </TextLoop> */}
+
                   </h1>
                 </div>
                 <div className="head-paragrapgh mb-4">
@@ -142,7 +151,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-sm-12 col-lg-6">
-              <div className="hood-img">
+              <div className="hood-img position-relative">
                 <img src='/images/underhood.png' alt='' width={710} height={580} />
               </div>
             </div>
@@ -150,8 +159,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* style={{ backgroundImage: "url(/images/loginbg.png)", backgroundSize: "cover", height: "510px" }} */}
       <section className='p-5'>
-        <div className="container mt-15 mb-15" style={{ backgroundImage: "url(/images/loginbg.png)", backgroundSize: "cover", height: "510px" }}>
+        <div className="container mt-15 mb-15">
           <div className="join" style={{ padding: "5rem" }}>
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
@@ -184,7 +194,7 @@ export default function Home() {
         <div className="container mb-15">
           <div className="row">
             <div className=" col-sm-12 col-lg-7">
-              <div className="throw-img">
+              <div className="throw-img position-relative">
                 <img src='/images/girls.png' alt='' />
               </div>
             </div>

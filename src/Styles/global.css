@@ -126,7 +126,7 @@ textarea {
 .animatedText{
     display: flex;
     position: relative;
-    margin-left: 10px;
+    margin-left: 140px;
 }
 
 .animatedText span{
@@ -235,11 +235,6 @@ textarea {
     color: #F5F5F5;
 }
 
-.cards-box {
-    width: 362px;
-    height: 420px;
-}
-
 .cards-topic {
     font-weight: 450;
     font-size: 18px;
@@ -323,6 +318,77 @@ textarea {
     font-size: 18px;
     line-height: 23px;
     color: #FFFFFF;
+}
+
+.hood-img img,
+.throw-img img
+{
+    position: relative;
+    z-index: 1;
+}
+
+.hood-img::after
+{
+    content: '';
+    position: absolute;
+    width: 299px;
+    height: 299px;
+    right: 0;
+    top: 155px;
+    background: #F07598;
+    opacity: 1;
+    filter: blur(398.055px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.hood-img::before
+{
+    content: '';
+    position: absolute;
+    width: 321.25px;
+    height: 321.25px;
+    left: 0;
+    top: 255px;
+    background: #84FFE1;
+    opacity: 0.5;
+    filter: blur(197.201px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.throw-img::after
+{
+    content: '';
+    position: absolute;
+    width: 299px;
+    height: 299px;
+    right: 530px;
+    top: 170px;
+
+    background: #F07598;
+    opacity: 1;
+    filter: blur(398.055px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.throw-img::before
+{
+    content: '';
+    position: absolute;
+    width: 321.25px;
+    height: 321.25px;
+    left: 452px;
+    top: 285px;
+
+    background: #84FFE1;
+    opacity: 0.3;
+    filter: blur(197.201px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+   
+}
+
+.features-row
+{
+    row-gap: 45px;
 }
 
 @media (max-width: 500px) {
@@ -496,5 +562,64 @@ textarea {
     .contactus
     {
         margin-bottom: 20px;
+    }
+
+    .throw-img::after
+    {
+        content: '';
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        right: 119px;
+        top: 116px;
+
+        background: #F07598;
+        opacity: 1;
+        filter: blur(398.055px);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .throw-img::before
+    {
+        content: '';
+        position: absolute;
+        width: 204px;
+        height: 204px;
+        left: 450px;
+        top: 116px;
+
+        background: #84FFE1;
+        opacity: 0.3;
+        filter: blur(197.201px);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    
+    }
+
+    .hood-img::after
+    {
+        content: '';
+        position: absolute;
+        width: 163px;
+        height: 163px;
+        right: 0;
+        top: 155px;
+        background: #F07598;
+        opacity: 1;
+        filter: blur(398.055px);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .hood-img::before
+    {
+        content: '';
+        position: absolute;
+        width: 175px;
+        height: 175px;
+        left: 0;
+        top: 255px;
+        background: #84FFE1;
+        opacity: 0.5;
+        filter: blur(197.201px);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 }

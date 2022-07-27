@@ -3,7 +3,7 @@ import React from 'react'
 export default function cards() {
   return (
     <>
-    <section>
+    <section className='features'>
       <div className="container">
         <div className="cards-head text-center mt-15 mb-15">
           <div className="cards-heading">
@@ -14,7 +14,7 @@ export default function cards() {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row features-row">
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="cards-box">
               <div className="cards-img">
