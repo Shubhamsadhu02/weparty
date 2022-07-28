@@ -9,7 +9,7 @@ export default function ContactUs() {
     </div>
     <Header showNav={false} />
     {/* style={{backgroundImage: "url(/images/contactusbg.png)", backgroundSize: "cover", height: "768px", marginTop: "-125px"}} */}
-    <section>
+    <section style={{margin: "0 0"}}>
         <div className="container">
             <div className="contact position-relative" style={{height: "750px"}}>
             <div className="row">
