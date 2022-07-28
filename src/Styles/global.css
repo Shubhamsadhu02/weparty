@@ -139,7 +139,7 @@ section {
 
 .home-head h1 {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     position: relative;
 }
 
