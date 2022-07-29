@@ -29,12 +29,6 @@ export default function Home() {
                         <b>Party</b>
                       </span>
                     </div>
-
-                    {/* <TextLoop>
-                      <span>First item</span>
-                      <span>second item</span>
-                    </TextLoop> */}
-
                   </h1>
                 </div>
                 <div className="head-paragrapgh mb-4">
