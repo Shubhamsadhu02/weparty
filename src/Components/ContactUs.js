@@ -24,22 +24,22 @@ export default function ContactUs() {
                     </div>
                 </div>
                 <div className="col-sm-12 col-lg-6">
-                    <form>
+                    <form name="contact" method='post' data-netlify="true" onSubmit="submit">
                     <div className="contactus">
                             <div className="row">
                                 <div className="col-sm-12 col-lg-12">
-                                    <input type="text" placeholder='Full Name' />
+                                    <input type="text" placeholder='Full Name' name="full-name" />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-6">
-                                    <input type="tel" placeholder='Mobile' />
+                                    <input type="tel" placeholder='Mobile' name="mobile" />
                                 </div>
                                 <div className="col-sm-12 col-lg-6">
-                                    <input type="email" placeholder='Email' />
+                                    <input type="email" placeholder='Email' name="email" />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-6">
-                                    <select id='BestTime'>
+                                    <select id='BestTime' name="best-time">
                                         <option value="none" selected disabled>Best Time to Contact</option>
                                         <option value={"06 AM - 12 PM"}>06 AM - 12 PM</option>
                                         <option value={"12 AM - 06 PM"}>12 AM - 06 PM</option>
@@ -47,7 +47,7 @@ export default function ContactUs() {
                                     </select>
                                 </div>
                                 <div className="col-sm-12 col-lg-6">
-                                    <select id='Occasion'>
+                                    <select id='Occasion' name="ocassion">
                                         <option value="none" selected disabled>Choose an Occasion</option>
                                         <option value={"Birthday parties"}>Birthday parties</option>
                                         <option value={"Wedding Events"}>Wedding Events</option>
@@ -60,19 +60,21 @@ export default function ContactUs() {
                                 </div>
 
                                 <div className="col-sm-12 col-lg-6">
-                                    <input type="date" placeholder='' />
+                                    <input type="date" placeholder='' name="date" />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-6">
-                                    <input type="text" id='Participants' placeholder='No. of Participants'/>
+                                    <input type="text" id='Participants' placeholder='No. of Participants'
+                                    name="participants"
+                                    />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-12">
-                                    <input type="text" placeholder='Have a Coupon Code? (optional)' />
+                                    <input type="text" placeholder='Have a Coupon Code? (optional)' name='coupon' />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-12">
-                                    <textarea placeholder='Message' />
+                                    <textarea placeholder='Message' name="message"/>
                                 </div>
 
                                 <div className="col-sm-12 send-btn mt-4">
