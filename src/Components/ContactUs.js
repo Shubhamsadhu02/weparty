@@ -24,7 +24,7 @@ export default function ContactUs() {
                     </div>
                 </div>
                 <div className="col-sm-12 col-lg-6">
-                    <form name="contact" method='post' data-netlify="true" onSubmit="submit">
+                    <form name="contact" netlify>
                     <div className="contactus">
                             <div className="row">
                                 <div className="col-sm-12 col-lg-12">
