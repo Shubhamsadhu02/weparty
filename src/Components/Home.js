@@ -3,7 +3,7 @@ import Header from '../Partials/Header'
 import Cards from './cards'
 import Footer from '../Partials/footer'
 import { Row, Col, Container } from 'reactstrap'
-import { motion, useScroll } from 'framer-motion'
+import {useScroll } from 'framer-motion'
 export default function Home() {
   const { scrollYProgress } = useScroll();
   console.log(scrollYProgress);
