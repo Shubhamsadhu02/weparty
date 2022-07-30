@@ -5,13 +5,13 @@ export default function ContactUs() {
   return (
     <>
     <div className="contactbg">
-        <img src='/images/contactusbg.png' alt=''/>
+        <img src='/images/contactusbg.png' style={{ height:100+'vh' }} alt=''/>
     </div>
     <Header showNav={false} />
     {/* style={{backgroundImage: "url(/images/contactusbg.png)", backgroundSize: "cover", height: "768px", marginTop: "-125px"}} */}
-    <section style={{margin: "0 0"}}>
+    <section className="contact-section">
         <div className="container">
-            <div className="contact position-relative" style={{height: "750px"}}>
+            <div className="contact position-relative">
             <div className="row">
                 <div className="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
                     <div className="home1">
@@ -19,58 +19,62 @@ export default function ContactUs() {
                             <img src='/images/partyicon.png' alt='' height={100} width={100}/>
                         </div>
                         <div className="home-head1">
-                            <h1>Request <br/>a<span style={{color: "#EB4775"}}> Party</span></h1>
+                            <h1>Request a<span style={{color: "#EB4775"}}> Party</span></h1>
                         </div>
                     </div>
                 </div>
                 <div className="col-sm-12 col-lg-6">
-                    <form>
+                    <form name="contact" netlify>
                     <div className="contactus">
                             <div className="row">
                                 <div className="col-sm-12 col-lg-12">
-                                    <input type="text" placeholder='Full Name' />
+                                    <input type="text" placeholder='Full Name' name="full-name" />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-6">
-                                    <input type="tel" placeholder='Mobile' />
+                                    <input type="tel" placeholder='Mobile' name="mobile" />
                                 </div>
                                 <div className="col-sm-12 col-lg-6">
-                                    <input type="email" placeholder='Email' />
+                                    <input type="email" placeholder='Email' name="email" />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-6">
-                                    <select id='BestTime'>
-                                        <option value="none" selected disabled hidden>Best Time to Contact</option>
-                                        <option value={"abc"}>ABC</option>
-                                        <option value={"def"}>DEF</option>
+                                    <select id='BestTime' name="best-time">
+                                        <option value="none" selected disabled>Best Time to Contact</option>
+                                        <option value={"06 AM - 12 PM"}>06 AM - 12 PM</option>
+                                        <option value={"12 AM - 06 PM"}>12 AM - 06 PM</option>
+                                        <option value={"06 PM - 12 PM"}>06 PM - 12 PM</option>
                                     </select>
                                 </div>
                                 <div className="col-sm-12 col-lg-6">
-                                    <select id='Occasion'>
-                                        <option value="none" selected disabled hidden>Choose an Occasion</option>
-                                        <option value={"abc"}>ABC</option>
-                                        <option value={"def"}>DEF</option>
+                                    <select id='Occasion' name="ocassion">
+                                        <option value="none" selected disabled>Choose an Occasion</option>
+                                        <option value={"Birthday parties"}>Birthday parties</option>
+                                        <option value={"Wedding Events"}>Wedding Events</option>
+                                        <option value={"Corporate Team Events"}>Corporate Team Events</option>
+                                        <option value={"College Fests"}>College Fests</option>
+                                        <option value={"Gaming Tournament"}>Gaming Tournament</option>
+                                        <option value={"Movie Nights"}>Movie Nights</option>
+
                                     </select>
                                 </div>
 
                                 <div className="col-sm-12 col-lg-6">
-                                    <input type="date" placeholder='' />
+                                    <input type="date" placeholder='' name="date" />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-6">
-                                    <select id='Participants'>
-                                        <option value="none" selected disabled hidden>No. of Participants</option>
-                                        <option value={"abc"}>ABC</option>
-                                        <option value={"def"}>DEF</option>
-                                    </select>
+                                    <input type="text" id='Participants' placeholder='No. of Participants'
+                                    name="participants"
+                                    />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-12">
-                                    <input type="text" placeholder='Have a Coupon Code? (optional)' />
+                                    <input type="text" placeholder='Have a Coupon Code? (optional)' name='coupon' />
                                 </div>
 
                                 <div className="col-sm-12 col-lg-12">
-                                    <textarea placeholder='Message' />
+                                    <textarea placeholder='Message' name="message"/>
                                 </div>
 
                                 <div className="col-sm-12 send-btn mt-4">
