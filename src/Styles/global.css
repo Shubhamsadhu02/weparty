@@ -582,10 +582,10 @@ section {
         width: calc(100% - 27px);
     }
 
-    .hood-img img {
+    /* .hood-img img {
         height: 317px;
         margin-top: 50px;
-    }
+    } */
 
     .join {
         padding: 25px 15px !important;
