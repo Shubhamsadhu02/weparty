@@ -500,6 +500,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 50%;
 }
 
+.contact-details--row{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-details--content a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1.1px;
+}
+
 @media (max-width: 500px) {
     .navbar .container {
         padding: 0 0 !important;
@@ -700,6 +712,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         opacity: 0.3;
         filter: blur(197.201px);
         transform: matrix(-1, 0, 0, 1, 0, 0);
+        z-index: 1;
 
     }
 

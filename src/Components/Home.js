@@ -4,9 +4,16 @@ import Cards from './cards'
 import Footer from '../Partials/footer'
 import { Row, Col, Container } from 'reactstrap'
 import {useScroll } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 export default function Home() {
   const { scrollYProgress } = useScroll();
   console.log(scrollYProgress);
+  const scrollToJoinList = () => {
+    let ele = document.getElementById('join');
+    let position = ele.offsetTop - (window.screen.height/2.5);
+    window.scrollTo(0, position); 
+  };
+  const navigator = useNavigate();
   return (
     <>
       <Header />
@@ -35,7 +42,7 @@ export default function Home() {
                   <p>Delivering kickass Entertainment at your doorstep!</p>
                 </div>
                 <div className="waitlist-btn">
-                  <button type="submit">Join the Waitlist</button>
+                  <button type="button" onClick={scrollToJoinList}>Join the Waitlist</button>
                 </div>
               </div>
             </Col>
@@ -137,7 +144,7 @@ export default function Home() {
       </section>
 
       {/* style={{ backgroundImage: "url(/images/loginbg.png)", backgroundSize: "cover", height: "510px" }} */}
-      <section className='join'>
+      <section className='join' id='join'>
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6">
@@ -178,8 +185,8 @@ export default function Home() {
               <div className="throw-head">
                 <h2>Throw a kickass party hassle-free</h2>
               </div>
-              <div className="throw-btn mt-5">
-                <button type='submit'>Get in Touch</button>
+              <div className="throw-btn mt-5" style={{ position:'relative', zIndez:'10' }}>
+                <button type='button' onClick={() => navigator('/contact-us')}>Get in Touch</button>
               </div>
             </div>
           </div>
