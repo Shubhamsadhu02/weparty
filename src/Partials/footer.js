@@ -30,6 +30,11 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className="whatsapp-fab">
+          <a href="https://wa.me/+917019257642" target="_blank" rel="noopener">
+            <img src="/images/icons8-whatsapp.svg" alt="Whatsapp Number" />
+          </a>
+        </div>
     </footer>
     </>
   )
