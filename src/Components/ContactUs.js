@@ -89,7 +89,7 @@ export default function ContactUs() {
                                             </div>
 
                                             <div className="col-sm-12 col-lg-12">
-                                                <input type="text" placeholder='Have a Coupon Code? (optional)' name='coupon' />
+                                                <input type="text" placeholder="Have a Coupon Code? (optional)" name="coupon" />
                                             </div>
 
                                             <div className="col-sm-12 col-lg-12">
