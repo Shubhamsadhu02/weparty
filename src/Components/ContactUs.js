@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../Partials/Header'
+import { Picture } from 'react-optimized-images'
 
 export default function ContactUs() {
     return (
         <>
             <div className="contactbg">
-                <img src='/images/contactusbg.png' style={{ height: 100 + 'vh' }} alt='' />
+                <Picture src='/images/contactusbg.png' style={{ height: 100 + 'vh' }} alt='' />
             </div>
             <Header showNav={false} />
             {/* style={{backgroundImage: "url(/images/contactusbg.png)", backgroundSize: "cover", height: "768px", marginTop: "-125px"}} */}
@@ -16,7 +17,7 @@ export default function ContactUs() {
                             <div className="col-sm-12 col-lg-6 d-flex flex-column justify-content-center">
                                 <div className="home1">
                                     <div className="party-icon">
-                                        <img src='/images/partyicon.png' alt='' height={100} width={100} />
+                                        <Picture src='/images/partyicon.png' alt='' height={100} width={100} />
                                     </div>
                                     <div className="home-head1">
                                         <h1>Request a<span style={{ color: "#EB4775" }}> Party</span></h1>
@@ -24,7 +25,7 @@ export default function ContactUs() {
                                     <div className="contact-details">
                                         <div className="contact-details--row">
                                             <div className="contact-details--image">
-                                                <img src="images/email-icon.svg" alt="" />
+                                                <Picture src="images/email-icon.svg" alt="" />
                                             </div>
                                             <div className="contact-details--content">
                                                 <a href="mailto:wepartytruck@gmail.com">wepartytruck@gmail.com</a>
@@ -32,7 +33,7 @@ export default function ContactUs() {
                                        </div>
                                         <div className="contact-details--row">
                                             <div className="contact-details--image">
-                                                <img src="images/call-icon.svg" alt="" />
+                                                <Picture src="images/call-icon.svg" alt="" />
                                             </div>
                                             <div className="contact-details--content">
                                                 <a href="tel:7019257642">7019257642</a>
@@ -42,7 +43,7 @@ export default function ContactUs() {
                                 </div>
                             </div>
                             <div className="col-sm-12 col-lg-6">
-                                <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
+                                <form name="contact" method="POST" data-netlify="true">
                                 <input type="hidden" name="form-name" value="contact" />
                                     <div className="contactus">
                                         <div className="row">
