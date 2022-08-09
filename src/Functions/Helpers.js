@@ -1,0 +1,16 @@
+export const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
+export const submitToNetlify = (data) => {
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode(data)
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+}
+

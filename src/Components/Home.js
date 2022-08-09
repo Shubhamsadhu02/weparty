@@ -5,14 +5,22 @@ import Footer from '../Partials/footer'
 import { Row, Col, Container } from 'reactstrap'
 import {useScroll } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { useForm } from "react-hook-form";
+import { submitToNetlify } from "../Functions/Helpers";
+
 export default function Home() {
-  const { scrollYProgress } = useScroll();
-  console.log(scrollYProgress);
   const scrollToJoinList = () => {
     let ele = document.getElementById('join');
     let position = ele.offsetTop - (window.screen.height/2.5);
     window.scrollTo(0, position); 
   };
+
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const onSubmit = (data) =>{
+    console.log(data);
+    submitToNetlify(data);
+  }
+
   const navigator = useNavigate();
   return (
     <>
@@ -157,12 +165,12 @@ export default function Home() {
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
-              <form name='waitlist' method='post' data-netlify="true" onSubmit="submit">
-              <input type="hidden" name="form-name" value="waitlist" />
+              <form name='waitlist' method='post' data-netlify="true" onSubmit={handleSubmit(onSubmit)}>
+              <input type="hidden" name="form-name" value="waitlist" { ...register('form-name') } />
                 <div className="join-form d-flex flex-column justify-content-end">
-                  <input type="text" placeholder='Full Name' name='full-name'/>
-                  <input type="email" placeholder='Email' name='email' />
-                  <input type="tel" placeholder='Mobile Number' name='mobile-number' />
+                  <input type="text" placeholder='Full Name' name='full_name' { ...register('full_name') } />
+                  <input type="email" placeholder='Email' name='email' { ...register('email') } />
+                  <input type="tel" placeholder='Mobile Number' name='mobile_number' { ...register('mobile_number') } />
                 </div>
                 <div className="join-btn d-flex justify-content-end mt-3">
                   <button type='submit'>Join Now</button>
