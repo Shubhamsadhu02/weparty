@@ -151,7 +151,7 @@ export default function Home() {
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-6">
               <div className="join-img">
-                <Picture src='/images/birthdayicon.png' alt='' height={76} width={76}></img>
+                <Picture src='/images/birthdayicon.png' alt='' height={76} width={76} />
               </div>
               <div className="join-head">
                 <h2>Join the Waitlist to <br /> get Early Bird <br />Discounts!</h2>

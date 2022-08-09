@@ -24,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build && npm run convert-images",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "convert-images": "npx convert-images"
   },
   "eslintConfig": {
     "extends": [
