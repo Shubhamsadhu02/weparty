@@ -165,12 +165,12 @@ export default function Home() {
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
-              <form name='waitlist' method='post' data-netlify="true" onSubmit={handleSubmit(onSubmit)}>
-              <input type="hidden" name="form-name" value="waitlist" { ...register('form-name') } />
+              <form name='waitlist' method='post' data-netlify="true">
+              <input type="hidden" name="form-name" value="waitlist" />
                 <div className="join-form d-flex flex-column justify-content-end">
-                  <input type="text" placeholder='Full Name' name='full_name' { ...register('full_name') } />
-                  <input type="email" placeholder='Email' name='email' { ...register('email') } />
-                  <input type="tel" placeholder='Mobile Number' name='mobile_number' { ...register('mobile_number') } />
+                  <input type="text" placeholder='Full Name' name='full_name' />
+                  <input type="email" placeholder='Email' name='email'/>
+                  <input type="tel" placeholder='Mobile Number' name='mobile_number' />
                 </div>
                 <div className="join-btn d-flex justify-content-end mt-3">
                   <button type='submit'>Join Now</button>
