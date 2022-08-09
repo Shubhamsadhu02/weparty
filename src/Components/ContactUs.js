@@ -42,7 +42,7 @@ export default function ContactUs() {
                                 </div>
                             </div>
                             <div className="col-sm-12 col-lg-6">
-                                <form name="contact" method="POST" data-netlify="true">
+                                <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
                                 <input type="hidden" name="form-name" value="contact" />
                                     <div className="contactus">
                                         <div className="row">

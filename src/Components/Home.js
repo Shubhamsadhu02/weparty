@@ -157,7 +157,8 @@ export default function Home() {
             </div>
 
             <div className="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center">
-              <form>
+              <form name='waitlist' method='post' data-netlify="true" onSubmit="submit">
+              <input type="hidden" name="form-name" value="waitlist" />
                 <div className="join-form d-flex flex-column justify-content-end">
                   <input type="text" placeholder='Full Name' />
                   <input type="email" placeholder='Email' />
