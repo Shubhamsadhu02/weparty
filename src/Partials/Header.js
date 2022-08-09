@@ -12,7 +12,7 @@ export default function Header(props) {
           <a href="/" className="navbar-brand"><img src="/images/logo.svg" alt='' height="45" width="134}" /></a>
           {showNav ?
           <div className="contact-btn">
-            <Link to={'/ContactUs'}>Contact us <img src='/images/WhatsApp.png' alt='' /></Link>
+            <Link to={'/contact-us'}>Contact us <img src='/images/WhatsApp.png' alt='' /></Link>
           </div>
           :""}
         </div>
