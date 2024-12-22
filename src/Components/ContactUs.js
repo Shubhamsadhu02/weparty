@@ -30,7 +30,7 @@ export default function ContactUs() {
                                             <div className="contact-details--content">
                                                 <a href="mailto:wepartytruck@gmail.com">wepartytruck@gmail.com</a>
                                             </div>
-                                       </div>
+                                        </div>
                                         <div className="contact-details--row">
                                             <div className="contact-details--image">
                                                 <Picture src="images/call-icon.svg" alt="" />
@@ -44,7 +44,7 @@ export default function ContactUs() {
                             </div>
                             <div className="col-sm-12 col-lg-6">
                                 <form name="contact" method="POST" data-netlify="true">
-                                <input type="hidden" name="form-name" value="contact" />
+                                    <input type="hidden" name="form-name" value="contact" />
                                     <div className="contactus">
                                         <div className="row">
                                             <div className="col-sm-12 col-lg-12">
@@ -58,15 +58,15 @@ export default function ContactUs() {
                                                 <input type="email" placeholder='Email' name="email" />
                                             </div>
 
-                                            <div className="col-sm-12 col-lg-6">
+                                            {/* <div className="col-sm-12 col-lg-6">
                                                 <select id='BestTime' name="best-time">
                                                     <option value="none" selected disabled>Best Time to Contact</option>
                                                     <option value={"06 AM - 12 PM"}>06 AM - 12 PM</option>
                                                     <option value={"12 AM - 06 PM"}>12 AM - 06 PM</option>
                                                     <option value={"06 PM - 12 PM"}>06 PM - 12 PM</option>
                                                 </select>
-                                            </div>
-                                            <div className="col-sm-12 col-lg-6">
+                                            </div> */}
+                                            <div className="col-sm-12 col-lg-12">
                                                 <select id='Occasion' name="ocassion">
                                                     <option value="none" selected disabled>Choose an Occasion</option>
                                                     <option value={"Birthday parties"}>Birthday parties</option>
@@ -75,6 +75,7 @@ export default function ContactUs() {
                                                     <option value={"College Fests"}>College Fests</option>
                                                     <option value={"Gaming Tournament"}>Gaming Tournament</option>
                                                     <option value={"Movie Nights"}>Movie Nights</option>
+                                                    <option value={"Other"}>Other</option>
 
                                                 </select>
                                             </div>
