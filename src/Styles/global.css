@@ -69,19 +69,20 @@ section {
     margin-top: 70px;
     position: relative;
     z-index: 10;
+    padding-bottom: 70px;
 }
 
 .home::after {
     content: '';
     position: absolute;
     width: 925px;
-    height: 925px;
-    left: -496px;
+    height: 425px;
+    left: -546px;
     top: -20px;
 
     background: #008DEB;
-    opacity: 0.3;
-    filter: blur(434px);
+    opacity: 0.25;
+    filter: blur(104px);
     z-index: -1;
 }
 
@@ -97,6 +98,16 @@ section {
     opacity: 0.72;
     filter: blur(434px);
     z-index: -1;
+}
+
+.front_shadow{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100vh;
+    /* background: #ff00002b; */
+    background: linear-gradient(175deg, rgba(9, 8, 22, 0.15) 78.43%, #0C0B1E 90.05%);
+    z-index: 20;
 }
 
 .home-col {

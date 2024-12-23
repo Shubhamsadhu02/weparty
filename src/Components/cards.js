@@ -9,9 +9,9 @@ export default function cards() {
             <div className="cards-heading">
               <h2>Bringing Virtual Reality<br />Excitement to Every Occasion!</h2>
             </div>
-            <div className="cards-paragrapgh mt-5">
+            {/* <div className="cards-paragrapgh mt-5">
               <p>Delivering kickass Entertainment for all <br /> occasions at your doorstep!</p>
-            </div>
+            </div> */}
           </div>
 
           <div className="row features-row">

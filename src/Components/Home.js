@@ -23,7 +23,7 @@ export default function Home() {
       <section className='home'>
         <Container>
           <Row noGutters={true}>
-            <Col md={6} sm={12}>
+            <Col md={6} sm={12} style={{ zIndex: "100" }}>
               <div className="home-col">
                 <div className="home-head mb-4">
                   <h1>We
@@ -49,13 +49,16 @@ export default function Home() {
                 </div>
               </div>
             </Col>
-            <Col md={6} sm={12}>
+            <Col md={6} sm={12} style={{ position: 'relative' }}>
               <div className="home-img">
                 <Picture src='/images/hero_image.png' alt='' />
               </div>
+              <div className="front_shadow"></div>
             </Col>
           </Row>
         </Container>
+        {/* <img src="/images/front_shadow.svg" alt="" className="front_shadow" /> */}
+
       </section>
 
 
