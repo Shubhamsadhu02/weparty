@@ -168,7 +168,7 @@ export default function Home() {
                 <div className="join-form d-flex flex-column justify-content-end">
                   <input type="text" placeholder='Full Name' name='full_name' />
                   <input type="email" placeholder='Email' name='email' />
-                  <input type="tel" placeholder='Mobile Number' name='mobile_number' />
+                  <input type="text" pattern="[789][0-9]{9}" placeholder='Mobile Number' name='mobile_number' />
                 </div>
                 <div className="join-btn d-flex justify-content-end mt-3">
                   <button type='submit'>Join Now</button>

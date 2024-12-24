@@ -52,7 +52,7 @@ export default function ContactUs() {
                                             </div>
 
                                             <div className="col-sm-12 col-lg-6">
-                                                <input type="tel" placeholder='Mobile' name="mobile" />
+                                                <input type="text" pattern="[789][0-9]{9}" placeholder='Mobile' name="mobile" />
                                             </div>
                                             <div className="col-sm-12 col-lg-6">
                                                 <input type="email" placeholder='Email' name="email" />
