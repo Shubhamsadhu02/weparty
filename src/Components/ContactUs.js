@@ -28,7 +28,7 @@ export default function ContactUs() {
                                                 <Picture src="images/email-icon.svg" alt="" />
                                             </div>
                                             <div className="contact-details--content">
-                                                <a href="mailto:wepartytruck@gmail.com">wepartytruck@gmail.com</a>
+                                                <a href="mailto:contact@weparty.in">contact@weparty.in</a>
                                             </div>
                                         </div>
                                         <div className="contact-details--row">
